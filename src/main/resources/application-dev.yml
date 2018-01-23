@@ -3,12 +3,14 @@ spring:
     url: jdbc:mysql://localhost:3306/sql_dev
     username: sql_dev_user
     password: yoo
+    platform: mysql
   jpa:
     hibernate:
       ddl-auto: validate
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     database: mysql
     show-sql: true
+  #Let spring.jpa.hibernate to generate schema
 #    properties:
 #      javax:
 #        persistence:
